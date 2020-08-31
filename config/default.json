@@ -1,0 +1,4 @@
+{
+  "port": 8080,
+  "mongoUri": "mongodb+srv://vladimir:reactdev2020@emanager.w49dq.mongodb.net/app?retryWrites=true&w=majority"
+}

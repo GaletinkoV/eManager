@@ -1,0 +1,49 @@
+{
+  "name": "e-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "client": "webpack-dev-server",
+    "server": "nodemon app",
+    "dev-build": "webpack --mode development --open --hot",
+    "prod-build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaletinkoV/eManager.git"
+  },
+  "keywords": [
+    "e-manager"
+  ],
+  "author": "Vladimir Galetinko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaletinkoV/eManager/issues"
+  },
+  "homepage": "https://github.com/GaletinkoV/eManager#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.2",
+    "html-webpack-plugin": "^4.4.1",
+    "nodemon": "^2.0.4",
+    "style-loader": "^1.2.1",
+    "svg-inline-loader": "^0.8.2",
+    "svg-url-loader": "^6.0.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "config": "^3.3.1",
+    "mongoose": "^5.10.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
+  }
+}
